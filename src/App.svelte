@@ -34,7 +34,7 @@
 <main>
   <Tabs {itemTabs} {activeTab} on:changeTab={changeTab} />
   {#if activeTab === "Current Polls"}
-    show me some love
+    show me some love motherfuucker
   {:else if activeTab === "Add Poll"}
     <AddPollForm on:add={AddPollToList} />
   {/if}

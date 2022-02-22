@@ -48,7 +48,6 @@
     <AddPollForm on:add={AddPollToList} />
   {/if}
 </main>
-<h1 class="bg-blue-900">asdasda</h1>
 
 <!-- <Footer /> -->
 <style>

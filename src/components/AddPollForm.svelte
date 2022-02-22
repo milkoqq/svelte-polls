@@ -36,7 +36,7 @@
         ...pollData,
         votesA: "",
         votesB: "",
-        id: Math.floor(Math.random() * 10),
+        id: Math.floor(Math.random() * 1000),
       };
       console.log(poll);
       dispatch("add", poll);

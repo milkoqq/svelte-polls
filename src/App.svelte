@@ -51,10 +51,7 @@
 <h1 class="bg-blue-900">asdasda</h1>
 
 <!-- <Footer /> -->
-<style global lang="postcss">
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+<style>
   main {
     /* width: 80%;
 	max-width: 50rem; */

@@ -25,6 +25,10 @@
 </div>
 
 <style>
+  .poll_wrapper {
+    padding: 1rem;
+    background-color: beige;
+  }
   .poll_question {
     font-weight: bold;
   }

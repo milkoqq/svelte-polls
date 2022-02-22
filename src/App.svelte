@@ -40,7 +40,7 @@
 </script>
 
 <Header />
-<main>
+<main class="">
   <Tabs {itemTabs} {activeTab} on:changeTab={changeTab} />
   {#if activeTab === "Current Polls"}
     <PollList {polls} />
@@ -48,9 +48,13 @@
     <AddPollForm on:add={AddPollToList} />
   {/if}
 </main>
+<h1 class="bg-blue-900">asdasda</h1>
 
 <!-- <Footer /> -->
-<style>
+<style global lang="postcss">
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
   main {
     /* width: 80%;
 	max-width: 50rem; */

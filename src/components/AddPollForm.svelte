@@ -2,7 +2,11 @@
   import Button from "../shared/Button.svelte";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
+
+  import Polls from "../stores/PollStore.js";
+
   let pollData = { question: "", answerA: "", answerB: "" };
+
   let errors = { question: "", answerA: "", answerB: "" };
   let valid = false;
 
@@ -38,8 +42,12 @@
         votesB: "",
         id: Math.floor(Math.random() * 1000),
       };
-      console.log(poll);
-      dispatch("add", poll);
+
+      Polls.update((currentPolls) => {
+        return [poll, ...currentPolls];
+      });
+
+      dispatch("add");
     }
   };
 </script>
